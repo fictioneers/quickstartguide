@@ -1,9 +1,5 @@
 # Quick start guide
 
-A quick start guide for Fictioneers platform (using the [JavaScript SDK](https://github.com/fictioneers/node-sdk)).
-
-## Installation
-
 Install the [Fictioneers JavaScript SDK](https://github.com/fictioneers/node-sdk) using the package manager of your choice:
 
 ```
