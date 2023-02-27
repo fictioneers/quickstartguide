@@ -16,7 +16,7 @@ yarn add fictioneers
 
 Next initialize an API client.
 
-If your code is running in a trusted environment (e.g. a backend service) you are safe to pass a secret key for the `apiKey` parameter - otherwise you should reference a visibile key.
+If your code is running in a trusted environment (e.g. a backend service) you are safe to pass a secret key for the `apiKey` parameter - otherwise you should reference a visible key.
 
 You can read more about the [different types of API keys in the API documentation](https://docs.fictioneers.co.uk/#authentication).
 
