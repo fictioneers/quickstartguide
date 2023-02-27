@@ -72,6 +72,8 @@ Following a link will change the state of the related `UserTimelineEvents`:
 * The `from` event will move from `ACTIVE` to `VISITED` state.
 * The `to` event will move from `UNVISITED` to `ACTIVE` state.
 
+These changes are available in the `userTimelineEventsResponse.meta.changed_timeline_events` array.
+
 ## Best Practices
 
 Recommended best practices to implement when building an integration:
@@ -94,4 +96,4 @@ To reduce the amount of API calls an integration requires, the Audience API retu
 
 This removes the need to chain API calls. For example if you were to call `followLinkUserTimelineEvent`, you might be tempted to chain calls to `getUserTimelineEvents` and `getUserStoryState`.
 
-Instead you can avoid these subsequent API calls and instead update your local state with references from `meta.user_timeline_events` and `meta.user_story_state`.
+Instead you can avoid these subsequent API calls and instead update your local state with references from `meta.changed_timeline_events` and `meta.user_story_state`.
