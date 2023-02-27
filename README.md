@@ -1,10 +1,10 @@
 # Quick start guide
 
-A quick start guide for Fictioneers platform (using the JavaScript SDK).
+A quick start guide for Fictioneers platform (using the [JavaScript SDK](https://github.com/fictioneers/node-sdk)).
 
 ## Installation
 
-Install the Fictioneers JavaScript SDK using the package manager of your choice:
+Install the [Fictioneers JavaScript SDK](https://github.com/fictioneers/node-sdk) using the package manager of your choice:
 
 ```
 npm install fictioneers
@@ -64,7 +64,10 @@ They are stateful objects, which can hold references to content, and have multip
 These links represent an implicit or explicit choice the user must take on their journey along the timeline, and afford the end user choice and agency in their experience.
 
 ```js
-const userTimelineEventsResponse = await fictioneersApiClient.followLinkUserTimelineEvent(fromEventID, linkID);
+const userTimelineEventsResponse = await fictioneersApiClient.followLinkUserTimelineEvent(
+  fromEventID,
+  linkID
+ );
 ```
 
 Following a link will change the state of the related `UserTimelineEvents`:
