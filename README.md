@@ -49,7 +49,7 @@ const createUserResponse = await fictioneersApiClient.createUser({
 });
 ```
 
-## User Timeline Events
+## Get User Timeline Events
 
 `UserTimelineEvents` are the core resources on a user timeline.
 
@@ -58,6 +58,8 @@ const userTimelineEventsResponse = await fictioneersApiClient.getUserTimelineEve
 ```
 
 They are stateful objects, which can hold references to content, and have multiple links to other `UserTimelineEvents`.
+
+## Follow a Link
 
 These links represent an implicit or explicit choice the user must take on their journey along the timeline, and afford the end user choice and agency in their experience.
 
