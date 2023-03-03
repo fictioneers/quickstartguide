@@ -96,3 +96,9 @@ To reduce the amount of API calls an integration requires, the Audience API retu
 This removes the need to chain API calls. For example if you were to call `followLinkUserTimelineEvent`, you might be tempted to chain calls to `getUserTimelineEvents` and `getUserStoryState`.
 
 Instead you can avoid these subsequent API calls and instead update your local state with references from `meta.changed_timeline_events` and `meta.user_story_state`.
+
+### Maintain local state
+
+We recommend:
+1. Storing a local representation of `UserTimelineEvents` upon initialisation.
+1. Updating your local representation of `UserTimelineEvents` whenever changes are present in `response.meta.changed_timeline_events`.
